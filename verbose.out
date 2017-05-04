@@ -1,0 +1,1640 @@
+
+*************************************************************
+ Geant4 version Name: geant4-10-02-beta-01 [MT]   (26-June-2015)
+  << in Multi-threaded mode >> 
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: neutronInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 9.5 GeV ---> 25 GeV
+        Model:            Binary Cascade: 0 eV  ---> 9.9 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV  ---> 4 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV  ---> 4 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV  ---> 4 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV  ---> 4 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:            BertiniCascade: 0 eV  ---> 3.5 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: kaon+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:  ChipsKaonPlusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: kaon-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns: ChipsKaonMinusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: lambdaInelastic
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns:   ChipsHyperonInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: pi+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: pi-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: protonInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 9.5 GeV ---> 25 GeV
+        Model:            Binary Cascade: 0 eV  ---> 9.9 GeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:      ChipsProtonElasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV  ---> 4 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+================================================================
+G4WT1 > 
+G4WT1 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT1 >  Local thread RunManagerKernel version Name: geant4-10-02-beta-01 [MT]
+G4WT1 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT1 > 
+G4WT0 > 
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 >  Local thread RunManagerKernel version Name: geant4-10-02-beta-01 [MT]
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 > 
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateQt (OGLI, OGLIQt)
+  OpenGLImmediateX (OGLIX)
+  OpenGLImmediateXm (OGLIXm, OGLI_FALLBACK, OGLIQt_FALLBACK)
+  OpenGLStoredQt (OGL, OGLS, OGLSQt)
+  OpenGLStoredX (OGLSX)
+  OpenGLStoredXm (OGLSXm, OGL_FALLBACK, OGLS_FALLBACK, OGLSQt_FALLBACK)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.94056 keV    e-  351.877 keV    e+  342.545 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 0 starts.
+G4WT1 > ### Run 0 starts on worker thread 1.
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT1 > --> Event 0 starts with initial seeds (48403846,52707439).
+G4WT1 > nParticle is1
+loaded 10/10 particles
+1-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT1 > 
+G4WT1 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT1 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     35.8    -41.3        0      4.03        0        0         0       World initStep
+G4WT1 >     0      -33      -13        0  7.5e+179        0        0         0       World initStep
+G4WT0 >     1     35.8    -41.3      995      4.03        0      995       995        RepY Transportation
+G4WT1 >     1      -33      -13      995  7.5e+179        0      995       995        RepY Transportation
+G4WT1 >     2      -33      -13    1e+03  7.5e+179        0       10     1e+03       World Transportation
+G4WT0 >     2     35.8    -41.3    1e+03      4.03        0       10     1e+03       World Transportation
+G4WT1 >     3      -33      -13  1.5e+03  7.5e+179        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 >     3     35.8    -41.3  1.5e+03      4.03        0      495   1.5e+03  OutOfWorld Transportation
+G4WT1 > nParticle is2
+G4WT1 > 
+G4WT1 > *********************************************************************************************************
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT1 > 
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 >     0    -10.5    -1.48        0  2.7e-110        0        0         0       World initStep
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT1 >     1    -10.5    -1.48  0.00873         0 2.7e-110  0.00873   0.00873       World phot
+G4WT1 > nParticle is3
+G4WT1 > 
+G4WT0 >     0    -36.2    -22.2        0     0.313        0        0         0       World initStep
+G4WT1 > *********************************************************************************************************
+G4WT0 >     1    -36.2    -22.2      995     0.313        0      995       995        RepY Transportation
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT1 > 
+G4WT0 >     2    -36.2    -22.2    1e+03     0.313        0       10     1e+03       World Transportation
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     3    -36.2    -22.2  1.5e+03     0.313        0      495   1.5e+03  OutOfWorld Transportation
+G4WT1 >     0   0.0857    -14.6        0  1.49e-76        0        0         0       World initStep
+G4WT0 > nParticle is3
+G4WT1 >     1   0.0857    -14.6   0.0216         0 1.49e-76   0.0216    0.0216       World phot
+G4WT1 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > 
+G4WT1 > *********************************************************************************************************
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT1 > *********************************************************************************************************
+G4WT1 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    0.359    -49.8        0       1.6        0        0         0       World initStep
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT1 >     0    -34.6    -48.6        0  3.31e-33        0        0         0       World initStep
+G4WT0 >     1    0.359    -49.8      995       1.6        0      995       995        RepY Transportation
+G4WT0 >     2    0.359    -49.8    1e+03       1.6        0       10     1e+03       World Transportation
+G4WT1 >     1    -34.6    -48.6   0.0127         0 3.31e-33   0.0127    0.0127       World phot
+G4WT1 > nParticle is5
+G4WT1 > 
+G4WT1 > *********************************************************************************************************
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT1 > 
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     3    0.359    -49.8  1.5e+03       1.6        0      495   1.5e+03  OutOfWorld Transportation
+G4WT1 >     0       36     39.5        0 4.16e-115        0        0         0       World initStep
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT1 >     1       36     39.5  0.00647         0 4.16e-115  0.00647   0.00647       World phot
+G4WT1 > nParticle is6
+G4WT1 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT1 > *********************************************************************************************************
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT1 > 
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     15.1     12.6        0     0.179        0        0         0       World initStep
+G4WT1 >     0     28.5     34.3        0  7.12e-67        0        0         0       World initStep
+G4WT0 >     1     15.1     12.6      995     0.179        0      995       995        RepY Transportation
+G4WT1 >     1     28.5     34.3  0.00447         0 7.12e-67  0.00447   0.00447       World phot
+G4WT1 > nParticle is7
+G4WT1 > 
+G4WT0 >     2     15.1     12.6    1e+03     0.179        0       10     1e+03       World Transportation
+G4WT1 > *********************************************************************************************************
+G4WT0 >     3     15.1     12.6  1.5e+03     0.179        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT1 > 
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT1 >     0     39.4     22.8        0  2.7e-110        0        0         0       World initStep
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -9.06    -21.6        0     0.429        0        0         0       World initStep
+G4WT1 >     1     39.4     22.8  0.00131         0 2.7e-110  0.00131   0.00131       World phot
+G4WT0 >     1    -9.06    -21.6      995     0.429        0      995       995        RepY Transportation
+G4WT1 > nParticle is8
+G4WT0 >     2    -9.06    -21.6    1e+03     0.429        0       10     1e+03       World Transportation
+G4WT1 > 
+G4WT1 > *********************************************************************************************************
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT0 >     3    -9.06    -21.6  1.5e+03     0.429        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -3.72     33.4        0     0.953        0        0         0       World initStep
+G4WT1 > 
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT1 >     0     31.9     38.8        0  6.88e-72        0        0         0       World initStep
+G4WT0 >     1    -3.72     33.4      995     0.953        0      995       995        RepY Transportation
+G4WT1 >     1     31.9     38.8  0.00753         0 6.88e-72  0.00753   0.00753       World phot
+G4WT1 > nParticle is9
+G4WT1 > 
+G4WT1 > *********************************************************************************************************
+G4WT0 >     2    -3.72     33.4    1e+03     0.953        0       10     1e+03       World Transportation
+G4WT1 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT1 > *********************************************************************************************************
+G4WT1 > 
+G4WT0 >     3    -3.72     33.4  1.5e+03     0.953        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT1 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 > 
+G4WT1 >     0    -12.6     35.7        0 9.77e+199        0        0         0       World initStep
+G4WT0 > *********************************************************************************************************
+G4WT1 >     1    -12.6     35.7      995 9.77e+199        0      995       995        RepY Transportation
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0       26     32.8        0     0.511        0        0         0       World initStep
+G4WT0 >     1       26     32.8      995     0.511        0      995       995        RepY Transportation
+G4WT0 >     2       26     32.8    1e+03     0.511        0       10     1e+03       World Transportation
+G4WT0 >     3       26     32.8  1.5e+03     0.511        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     16.1      -25        0     0.853        0        0         0       World initStep
+G4WT0 >     1     16.1      -25      995     0.853        0      995       995        RepY Transportation
+G4WT0 >     2     16.1      -25    1e+03     0.853        0       10     1e+03       World Transportation
+G4WT0 >     3     16.1      -25  1.5e+03     0.853        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     38.2       49        0      4.52        0        0         0       World initStep
+G4WT0 >     1     38.2       49      995      4.52        0      995       995        RepY Transportation
+G4WT0 >     2     38.2       49    1e+03      4.52        0       10     1e+03       World Transportation
+G4WT0 >     3     38.2       49  1.5e+03      4.52        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -15.1    -36.7        0      1.06        0        0         0       World initStep
+G4WT0 >     1    -15.1    -36.7      995      1.06        0      995       995        RepY Transportation
+G4WT0 >     2    -15.1    -36.7    1e+03      1.06        0       10     1e+03       World Transportation
+G4WT0 >     3    -15.1    -36.7  1.5e+03      1.06        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+2-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0      -45    -9.89        0      1.45        0        0         0       World initStep
+G4WT0 >     1      -45    -9.89      995      1.45        0      995       995        RepY Transportation
+G4WT0 >     2      -45    -9.89    1e+03      1.45        0       10     1e+03       World Transportation
+G4WT0 >     3      -45    -9.89  1.5e+03      1.45        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -38.9     23.2        0      0.41        0        0         0       World initStep
+G4WT0 >     1    -38.9     23.2      995      0.41        0      995       995        RepY Transportation
+G4WT0 >     2    -38.9     23.2    1e+03      0.41        0       10     1e+03       World Transportation
+G4WT0 >     3    -38.9     23.2  1.5e+03      0.41        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     21.5   -0.297        0      3.03        0        0         0       World initStep
+G4WT0 >     1     21.5   -0.297      995      3.03        0      995       995        RepY Transportation
+G4WT0 >     2     21.5   -0.297    1e+03      3.03        0       10     1e+03       World Transportation
+G4WT0 >     3     21.5   -0.297  1.5e+03      3.03        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     18.1    -28.7        0      2.54        0        0         0       World initStep
+G4WT0 >     1     18.1    -28.7      995      2.54        0      995       995        RepY Transportation
+G4WT0 >     2     18.1    -28.7    1e+03      2.54        0       10     1e+03       World Transportation
+G4WT0 >     3     18.1    -28.7  1.5e+03      2.54        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     13.6    -17.7        0     0.565        0        0         0       World initStep
+G4WT0 >     1     13.6    -17.7      995     0.565        0      995       995        RepY Transportation
+G4WT0 >     2     13.6    -17.7    1e+03     0.565        0       10     1e+03       World Transportation
+G4WT0 >     3     13.6    -17.7  1.5e+03     0.565        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -22.4    -43.1        0     0.315        0        0         0       World initStep
+G4WT0 >     1    -22.4    -43.1      995     0.315        0      995       995        RepY Transportation
+G4WT0 >     2    -22.4    -43.1    1e+03     0.315        0       10     1e+03       World Transportation
+G4WT0 >     3    -22.4    -43.1  1.5e+03     0.315        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -32.2    -28.9        0     0.405        0        0         0       World initStep
+G4WT0 >     1    -32.2    -28.9      995     0.405        0      995       995        RepY Transportation
+G4WT0 >     2    -32.2    -28.9    1e+03     0.405        0       10     1e+03       World Transportation
+G4WT0 >     3    -32.2    -28.9  1.5e+03     0.405        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -31.2     19.5        0      1.72        0        0         0       World initStep
+G4WT0 >     1    -31.2     19.5      995      1.72        0      995       995        RepY Transportation
+G4WT0 >     2    -31.2     19.5    1e+03      1.72        0       10     1e+03       World Transportation
+G4WT0 >     3    -31.2     19.5  1.5e+03      1.72        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     34.1     3.73        0      2.66        0        0         0       World initStep
+G4WT0 >     1     34.1     3.73      995      2.66        0      995       995        RepY Transportation
+G4WT0 >     2     34.1     3.73    1e+03      2.66        0       10     1e+03       World Transportation
+G4WT0 >     3     34.1     3.73  1.5e+03      2.66        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     42.4     21.1        0     0.508        0        0         0       World initStep
+G4WT0 >     1     42.4     21.1      995     0.508        0      995       995        RepY Transportation
+G4WT0 >     2     42.4     21.1    1e+03     0.508        0       10     1e+03       World Transportation
+G4WT0 >     3     42.4     21.1  1.5e+03     0.508        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+3-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     17.2       29        0       2.1        0        0         0       World initStep
+G4WT0 >     1     17.2       29      995       2.1        0      995       995        RepY Transportation
+G4WT0 >     2     17.2       29    1e+03       2.1        0       10     1e+03       World Transportation
+G4WT0 >     3     17.2       29  1.5e+03       2.1        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     17.3   -0.607        0     0.535        0        0         0       World initStep
+G4WT0 >     1     17.3   -0.607      995     0.535        0      995       995        RepY Transportation
+G4WT0 >     2     17.3   -0.607    1e+03     0.535        0       10     1e+03       World Transportation
+G4WT0 >     3     17.3   -0.607  1.5e+03     0.535        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -32.9     8.41        0         2        0        0         0       World initStep
+G4WT0 >     1    -32.9     8.41      995         2        0      995       995        RepY Transportation
+G4WT0 >     2    -32.9     8.41    1e+03         2        0       10     1e+03       World Transportation
+G4WT0 >     3    -32.9     8.41  1.5e+03         2        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -36.9    -8.84        0     0.534        0        0         0       World initStep
+G4WT0 >     1    -36.9    -8.84      995     0.534        0      995       995        RepY Transportation
+G4WT0 >     2    -36.9    -8.84    1e+03     0.534        0       10     1e+03       World Transportation
+G4WT0 >     3    -36.9    -8.84  1.5e+03     0.534        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     18.5     27.9        0     0.518        0        0         0       World initStep
+G4WT0 >     1     18.5     27.9      995     0.518        0      995       995        RepY Transportation
+G4WT0 >     2     18.5     27.9    1e+03     0.518        0       10     1e+03       World Transportation
+G4WT0 >     3     18.5     27.9  1.5e+03     0.518        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0   -0.267    -11.1        0      1.69        0        0         0       World initStep
+G4WT0 >     1   -0.267    -11.1      995      1.69        0      995       995        RepY Transportation
+G4WT0 >     2   -0.267    -11.1    1e+03      1.69        0       10     1e+03       World Transportation
+G4WT0 >     3   -0.267    -11.1  1.5e+03      1.69        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -15.6     26.2        0     0.236        0        0         0       World initStep
+G4WT0 >     1    -15.6     26.2      995     0.236        0      995       995        RepY Transportation
+G4WT0 >     2    -15.6     26.2    1e+03     0.236        0       10     1e+03       World Transportation
+G4WT0 >     3    -15.6     26.2  1.5e+03     0.236        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -47.7     44.1        0     0.453        0        0         0       World initStep
+G4WT0 >     1    -47.7     44.1      995     0.453        0      995       995        RepY Transportation
+G4WT0 >     2    -47.7     44.1    1e+03     0.453        0       10     1e+03       World Transportation
+G4WT0 >     3    -47.7     44.1  1.5e+03     0.453        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -10.4      -15        0      2.06        0        0         0       World initStep
+G4WT0 >     1    -10.4      -15      995      2.06        0      995       995        RepY Transportation
+G4WT0 >     2    -10.4      -15    1e+03      2.06        0       10     1e+03       World Transportation
+G4WT0 >     3    -10.4      -15  1.5e+03      2.06        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     42.8     11.8        0     0.766        0        0         0       World initStep
+G4WT0 >     1     42.8     11.8      995     0.766        0      995       995        RepY Transportation
+G4WT0 >     2     42.8     11.8    1e+03     0.766        0       10     1e+03       World Transportation
+G4WT0 >     3     42.8     11.8  1.5e+03     0.766        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+4-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     34.4     49.6        0      1.66        0        0         0       World initStep
+G4WT0 >     1     34.4     49.6      995      1.66        0      995       995        RepY Transportation
+G4WT0 >     2     34.4     49.6    1e+03      1.66        0       10     1e+03       World Transportation
+G4WT0 >     3     34.4     49.6  1.5e+03      1.66        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     22.4     36.6        0     0.957        0        0         0       World initStep
+G4WT0 >     1     22.4     36.6      995     0.957        0      995       995        RepY Transportation
+G4WT0 >     2     22.4     36.6    1e+03     0.957        0       10     1e+03       World Transportation
+G4WT0 >     3     22.4     36.6  1.5e+03     0.957        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     37.3    -10.1        0      1.35        0        0         0       World initStep
+G4WT0 >     1     37.3    -10.1      995      1.35        0      995       995        RepY Transportation
+G4WT0 >     2     37.3    -10.1    1e+03      1.35        0       10     1e+03       World Transportation
+G4WT0 >     3     37.3    -10.1  1.5e+03      1.35        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     37.2    -31.2        0      0.62        0        0         0       World initStep
+G4WT0 >     1     37.2    -31.2      995      0.62        0      995       995        RepY Transportation
+G4WT0 >     2     37.2    -31.2    1e+03      0.62        0       10     1e+03       World Transportation
+G4WT0 >     3     37.2    -31.2  1.5e+03      0.62        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     43.4    -32.1        0      1.34        0        0         0       World initStep
+G4WT0 >     1     43.4    -32.1      995      1.34        0      995       995        RepY Transportation
+G4WT0 >     2     43.4    -32.1    1e+03      1.34        0       10     1e+03       World Transportation
+G4WT0 >     3     43.4    -32.1  1.5e+03      1.34        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     44.4    -3.63        0     0.524        0        0         0       World initStep
+G4WT0 >     1     44.4    -3.63      995     0.524        0      995       995        RepY Transportation
+G4WT0 >     2     44.4    -3.63    1e+03     0.524        0       10     1e+03       World Transportation
+G4WT0 >     3     44.4    -3.63  1.5e+03     0.524        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     48.1    -34.7        0     0.928        0        0         0       World initStep
+G4WT0 >     1     48.1    -34.7      995     0.928        0      995       995        RepY Transportation
+G4WT0 >     2     48.1    -34.7    1e+03     0.928        0       10     1e+03       World Transportation
+G4WT0 >     3     48.1    -34.7  1.5e+03     0.928        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -34.3     25.9        0     0.458        0        0         0       World initStep
+G4WT0 >     1    -34.3     25.9      995     0.458        0      995       995        RepY Transportation
+G4WT0 >     2    -34.3     25.9    1e+03     0.458        0       10     1e+03       World Transportation
+G4WT0 >     3    -34.3     25.9  1.5e+03     0.458        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     45.4       26        0     0.525        0        0         0       World initStep
+G4WT0 >     1     45.4       26      995     0.525        0      995       995        RepY Transportation
+G4WT0 >     2     45.4       26    1e+03     0.525        0       10     1e+03       World Transportation
+G4WT0 >     3     45.4       26  1.5e+03     0.525        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     -6.5      -32        0     0.265        0        0         0       World initStep
+G4WT0 >     1     -6.5      -32      995     0.265        0      995       995        RepY Transportation
+G4WT0 >     2     -6.5      -32    1e+03     0.265        0       10     1e+03       World Transportation
+G4WT0 >     3     -6.5      -32  1.5e+03     0.265        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+5-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     17.6     14.3        0     0.449        0        0         0       World initStep
+G4WT0 >     1     17.6     14.3      995     0.449        0      995       995        RepY Transportation
+G4WT0 >     2     17.6     14.3    1e+03     0.449        0       10     1e+03       World Transportation
+G4WT0 >     3     17.6     14.3  1.5e+03     0.449        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -48.5     24.9        0      1.31        0        0         0       World initStep
+G4WT0 >     1    -48.5     24.9      995      1.31        0      995       995        RepY Transportation
+G4WT0 >     2    -48.5     24.9    1e+03      1.31        0       10     1e+03       World Transportation
+G4WT0 >     3    -48.5     24.9  1.5e+03      1.31        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -12.2      -41        0     0.986        0        0         0       World initStep
+G4WT0 >     1    -12.2      -41      995     0.986        0      995       995        RepY Transportation
+G4WT0 >     2    -12.2      -41    1e+03     0.986        0       10     1e+03       World Transportation
+G4WT0 >     3    -12.2      -41  1.5e+03     0.986        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -27.6     11.2        0     0.613        0        0         0       World initStep
+G4WT0 >     1    -27.6     11.2      995     0.613        0      995       995        RepY Transportation
+G4WT0 >     2    -27.6     11.2    1e+03     0.613        0       10     1e+03       World Transportation
+G4WT0 >     3    -27.6     11.2  1.5e+03     0.613        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     42.3     3.39        0     0.979        0        0         0       World initStep
+G4WT0 >     1     42.3     3.39      995     0.979        0      995       995        RepY Transportation
+G4WT0 >     2     42.3     3.39    1e+03     0.979        0       10     1e+03       World Transportation
+G4WT0 >     3     42.3     3.39  1.5e+03     0.979        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     11.9     9.41        0       1.4        0        0         0       World initStep
+G4WT0 >     1     11.9     9.41      995       1.4        0      995       995        RepY Transportation
+G4WT0 >     2     11.9     9.41    1e+03       1.4        0       10     1e+03       World Transportation
+G4WT0 >     3     11.9     9.41  1.5e+03       1.4        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     -7.3    -29.7        0     0.734        0        0         0       World initStep
+G4WT0 >     1     -7.3    -29.7      995     0.734        0      995       995        RepY Transportation
+G4WT0 >     2     -7.3    -29.7    1e+03     0.734        0       10     1e+03       World Transportation
+G4WT0 >     3     -7.3    -29.7  1.5e+03     0.734        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     22.4    -22.1        0      3.02        0        0         0       World initStep
+G4WT0 >     1     22.4    -22.1      995      3.02        0      995       995        RepY Transportation
+G4WT0 >     2     22.4    -22.1    1e+03     0.463        0     9.81     1e+03        RepY compt
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  1 ---------------
+G4WT0 >     :      22.4     -22.1     1e+03      2.55                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     3     19.7    -21.4    1e+03     0.463        0     2.85  1.01e+03       World Transportation
+G4WT0 >     4 -1.5e+03      370 1.11e+03     0.463        0 1.57e+03  2.58e+03  OutOfWorld Transportation
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     22.4    -22.1    1e+03      2.55        0        0         0        RepY initStep
+G4WT0 >     1     22.4    -22.1    1e+03      2.53   0.0249    0.192     0.192       World Transportation
+G4WT0 >     2     26.8    -11.2 1.25e+03      2.49   0.0387      247       247       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  1 ---------------
+G4WT0 >     :      26.8     -11.2  1.25e+03   0.00225                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     3     33.3    -10.3 1.32e+03      2.47  0.00988       64       311       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  2 ---------------
+G4WT0 >     :      33.3     -10.3  1.32e+03   0.00306                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     4     33.5    -10.1 1.32e+03      2.47 0.000188     1.85       313       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  3 ---------------
+G4WT0 >     :      33.5     -10.1  1.32e+03   0.00335                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     5       40    -4.85 1.39e+03      2.46   0.0103       77       390       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  4 ---------------
+G4WT0 >     :        40     -4.85  1.39e+03    0.0012                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     6     45.6     7.36  1.5e+03      2.44   0.0163      108       498  OutOfWorld Transportation
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0       40    -4.85 1.39e+03    0.0012        0        0         0       World initStep
+G4WT0 >     1     39.9    -4.84 1.39e+03         0   0.0012   0.0747    0.0747       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     33.5    -10.1 1.32e+03   0.00335        0        0         0       World initStep
+G4WT0 >     1     33.6    -9.91 1.32e+03         0  0.00335    0.381     0.381       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     33.3    -10.3 1.32e+03   0.00306        0        0         0       World initStep
+G4WT0 >     1     33.2    -10.4 1.32e+03         0  0.00306    0.326     0.326       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     26.8    -11.2 1.25e+03   0.00225        0        0         0       World initStep
+G4WT0 >     1     26.9    -11.2 1.25e+03         0  0.00225    0.195     0.195       World eIoni
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -12.8     42.9        0      1.53        0        0         0       World initStep
+G4WT0 >     1    -12.8     42.9      995      1.53        0      995       995        RepY Transportation
+G4WT0 >     2    -12.8     42.9    1e+03      1.53        0       10     1e+03       World Transportation
+G4WT0 >     3    -12.8     42.9  1.5e+03      1.53        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -14.7     9.04        0      1.39        0        0         0       World initStep
+G4WT0 >     1    -14.7     9.04      995      1.39        0      995       995        RepY Transportation
+G4WT0 >     2    -14.7     9.04    1e+03      1.39        0       10     1e+03       World Transportation
+G4WT0 >     3    -14.7     9.04  1.5e+03      1.39        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+6-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -48.3     8.79        0     0.511        0        0         0       World initStep
+G4WT0 >     1    -48.3     8.79      995     0.511        0      995       995        RepY Transportation
+G4WT0 >     2    -48.3     8.79    1e+03     0.511        0       10     1e+03       World Transportation
+G4WT0 >     3    -48.3     8.79  1.5e+03     0.511        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     41.7    -35.2        0     0.557        0        0         0       World initStep
+G4WT0 >     1     41.7    -35.2      995     0.557        0      995       995        RepY Transportation
+G4WT0 >     2     41.7    -35.2    1e+03     0.557        0       10     1e+03       World Transportation
+G4WT0 >     3     41.7    -35.2  1.5e+03     0.557        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -29.2     17.3        0     0.531        0        0         0       World initStep
+G4WT0 >     1    -29.2     17.3      995     0.531        0      995       995        RepY Transportation
+G4WT0 >     2    -29.2     17.3    1e+03     0.531        0       10     1e+03       World Transportation
+G4WT0 >     3    -29.2     17.3  1.5e+03     0.531        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     24.3       23        0      1.82        0        0         0       World initStep
+G4WT0 >     1     24.3       23      995      1.82        0      995       995        RepY Transportation
+G4WT0 >     2     24.3       23    1e+03      1.82        0       10     1e+03       World Transportation
+G4WT0 >     3     24.3       23  1.5e+03      1.82        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0      -33     29.4        0      2.43        0        0         0       World initStep
+G4WT0 >     1      -33     29.4      995      2.43        0      995       995        RepY Transportation
+G4WT0 >     2      -33     29.4    1e+03      2.43        0       10     1e+03       World Transportation
+G4WT0 >     3      -33     29.4  1.5e+03      2.43        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0      -19    -7.44        0     0.501        0        0         0       World initStep
+G4WT0 >     1      -19    -7.44      995     0.501        0      995       995        RepY Transportation
+G4WT0 >     2      -19    -7.44    1e+03     0.501        0       10     1e+03       World Transportation
+G4WT0 >     3      -19    -7.44  1.5e+03     0.501        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     35.3    -14.8        0      1.58        0        0         0       World initStep
+G4WT0 >     1     35.3    -14.8      995      1.58        0      995       995        RepY Transportation
+G4WT0 >     2     35.3    -14.8    1e+03      1.58        0       10     1e+03       World Transportation
+G4WT0 >     3     35.3    -14.8  1.5e+03      1.58        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     27.9     34.4        0      1.12        0        0         0       World initStep
+G4WT0 >     1     27.9     34.4      995      1.12        0      995       995        RepY Transportation
+G4WT0 >     2     27.9     34.4    1e+03      1.12        0       10     1e+03       World Transportation
+G4WT0 >     3     27.9     34.4  1.5e+03      1.12        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -44.3    -41.6        0       4.4        0        0         0       World initStep
+G4WT0 >     1    -44.3    -41.6      995       4.4        0      995       995        RepY Transportation
+G4WT0 >     2    -44.3    -41.6    1e+03       4.4        0       10     1e+03       World Transportation
+G4WT0 >     3    -44.3    -41.6  1.5e+03       4.4        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -6.35    -30.5        0     0.858        0        0         0       World initStep
+G4WT0 >     1    -6.35    -30.5      995     0.858        0      995       995        RepY Transportation
+G4WT0 >     2    -6.35    -30.5    1e+03     0.858        0       10     1e+03       World Transportation
+G4WT0 >     3    -6.35    -30.5  1.5e+03     0.858        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+7-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -12.3     14.8        0     0.421        0        0         0       World initStep
+G4WT0 >     1    -12.3     14.8      995     0.421        0      995       995        RepY Transportation
+G4WT0 >     2    -12.3     14.8    1e+03     0.421        0       10     1e+03       World Transportation
+G4WT0 >     3    -12.3     14.8  1.5e+03     0.421        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     31.8     40.2        0      1.11        0        0         0       World initStep
+G4WT0 >     1     31.8     40.2      995      1.11        0      995       995        RepY Transportation
+G4WT0 >     2     31.8     40.2    1e+03      1.11        0       10     1e+03       World Transportation
+G4WT0 >     3     31.8     40.2  1.5e+03      1.11        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     45.5       45        0     0.396        0        0         0       World initStep
+G4WT0 >     1     45.5       45      995     0.396        0      995       995        RepY Transportation
+G4WT0 >     2     45.5       45    1e+03     0.396        0       10     1e+03       World Transportation
+G4WT0 >     3     45.5       45  1.5e+03     0.396        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     26.6    -40.7        0       2.3        0        0         0       World initStep
+G4WT0 >     1     26.6    -40.7      995       2.3        0      995       995        RepY Transportation
+G4WT0 >     2     26.6    -40.7    1e+03       2.3        0       10     1e+03       World Transportation
+G4WT0 >     3     26.6    -40.7  1.5e+03       2.3        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     17.1    -19.4        0      1.98        0        0         0       World initStep
+G4WT0 >     1     17.1    -19.4      995      1.98        0      995       995        RepY Transportation
+G4WT0 >     2     17.1    -19.4    1e+03      1.98        0       10     1e+03       World Transportation
+G4WT0 >     3     17.1    -19.4  1.5e+03      1.98        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     28.1     40.8        0      1.82        0        0         0       World initStep
+G4WT0 >     1     28.1     40.8      995      1.82        0      995       995        RepY Transportation
+G4WT0 >     2     28.1     40.8    1e+03      1.82        0       10     1e+03       World Transportation
+G4WT0 >     3     28.1     40.8  1.5e+03      1.82        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     3.92     34.6        0     0.249        0        0         0       World initStep
+G4WT0 >     1     3.92     34.6      995     0.249        0      995       995        RepY Transportation
+G4WT0 >     2     3.92     34.6    1e+03     0.249        0       10     1e+03       World Transportation
+G4WT0 >     3     3.92     34.6  1.5e+03     0.249        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -26.7     13.2        0       1.4        0        0         0       World initStep
+G4WT0 >     1    -26.7     13.2      995       1.4        0      995       995        RepY Transportation
+G4WT0 >     2    -26.7     13.2    1e+03       1.4        0       10     1e+03       World Transportation
+G4WT0 >     3    -26.7     13.2  1.5e+03       1.4        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -12.8       46        0      1.94        0        0         0       World initStep
+G4WT0 >     1    -12.8       46      995      1.94        0      995       995        RepY Transportation
+G4WT0 >     2    -12.8       46    1e+03      1.94        0       10     1e+03       World Transportation
+G4WT0 >     3    -12.8       46  1.5e+03      1.94        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -48.2    -17.7        0     0.466        0        0         0       World initStep
+G4WT0 >     1    -48.2    -17.7      995     0.466        0      995       995        RepY Transportation
+G4WT0 >     2    -48.2    -17.7    1e+03     0.466        0       10     1e+03       World Transportation
+G4WT0 >     3    -48.2    -17.7  1.5e+03     0.466        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+8-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     34.2     -7.5        0     0.747        0        0         0       World initStep
+G4WT0 >     1     34.2     -7.5      995     0.747        0      995       995        RepY Transportation
+G4WT0 >     2     34.2     -7.5    1e+03     0.747        0       10     1e+03       World Transportation
+G4WT0 >     3     34.2     -7.5  1.5e+03     0.747        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -26.9     27.3        0     0.178        0        0         0       World initStep
+G4WT0 >     1    -26.9     27.3      995     0.178        0      995       995        RepY Transportation
+G4WT0 >     2    -26.9     27.3    1e+03     0.178        0       10     1e+03       World Transportation
+G4WT0 >     3    -26.9     27.3  1.4e+03     0.107        0      395   1.4e+03       World compt
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  1 ---------------
+G4WT0 >     :     -26.9      27.3   1.4e+03    0.0714                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     4 -1.03e+03      805 -1.5e+03     0.107        0 3.16e+03  4.56e+03  OutOfWorld Transportation
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -26.9     27.3  1.4e+03    0.0714        0        0         0       World initStep
+G4WT0 >     1    -27.1       27  1.4e+03    0.0691 0.000774     2.84      2.84       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  1 ---------------
+G4WT0 >     :     -27.1        27   1.4e+03   0.00157                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     2      -32     35.7 1.42e+03    0.0596  0.00953     19.7      22.6       World eIoni
+G4WT0 >     3    -39.4     37.6 1.42e+03    0.0522  0.00546     9.67      32.2       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  2 ---------------
+G4WT0 >     :     -39.4      37.6  1.42e+03   0.00193                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     4    -40.1     37.3 1.42e+03    0.0496 0.000632    0.785        33       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  3 ---------------
+G4WT0 >     :     -40.1      37.3  1.42e+03   0.00191                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     5    -40.9       37 1.42e+03    0.0476 0.000415     1.03      34.1       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  4 ---------------
+G4WT0 >     :     -40.9        37  1.42e+03   0.00165                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     6    -48.5     31.8 1.43e+03    0.0414   0.0062     10.8      44.9       World eIoni
+G4WT0 >     7    -48.8     31.5 1.42e+03    0.0214 0.000231    0.686      45.6       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  5 ---------------
+G4WT0 >     :     -48.8      31.5  1.42e+03    0.0198                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     8    -50.1       29 1.42e+03     0.019  0.00235     3.67      49.3       World eIoni
+G4WT0 >     9    -51.7     27.6 1.42e+03    0.0164  0.00266     3.24      52.5       World eIoni
+G4WT0 >    10    -52.1     27.1 1.42e+03    0.0132  0.00186    0.656      53.2       World eIoni
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  6 ---------------
+G4WT0 >     :     -52.1      27.1  1.42e+03   0.00135                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >    11    -53.2     26.1 1.42e+03    0.0079  0.00526      2.3      55.5       World eIoni
+G4WT0 >    12    -52.8     26.1 1.42e+03   0.00352  0.00437     1.49      56.9       World eIoni
+G4WT0 >    13      -53     26.2 1.42e+03         0  0.00352    0.415      57.4       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 8,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -52.1     27.1 1.42e+03   0.00135        0        0         0       World initStep
+G4WT0 >     1    -52.1     27.1 1.42e+03         0  0.00135    0.088     0.088       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 7,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -48.8     31.5 1.42e+03    0.0198        0        0         0       World initStep
+G4WT0 >     1    -49.6     32.5 1.42e+03    0.0161  0.00366     3.37      3.37       World eIoni
+G4WT0 >     2    -49.5     34.2 1.42e+03    0.0117  0.00446     2.75      6.12       World eIoni
+G4WT0 >     3    -49.1     35.3 1.42e+03   0.00662  0.00503     2.08       8.2       World eIoni
+G4WT0 >     4    -49.2     34.8 1.42e+03  0.000696  0.00592     1.22      9.42       World eIoni
+G4WT0 >     5    -49.2     34.8 1.42e+03         0 0.000696   0.0348      9.46       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 6,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -40.9       37 1.42e+03   0.00165        0        0         0       World initStep
+G4WT0 >     1    -40.9       37 1.42e+03         0  0.00165     0.12      0.12       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 5,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -40.1     37.3 1.42e+03   0.00191        0        0         0       World initStep
+G4WT0 >     1    -40.1     37.4 1.42e+03         0  0.00191    0.151     0.151       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 4,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -39.4     37.6 1.42e+03   0.00193        0        0         0       World initStep
+G4WT0 >     1    -39.4     37.6 1.42e+03         0  0.00193    0.153     0.153       World eIoni
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 2
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -27.1       27  1.4e+03   0.00157        0        0         0       World initStep
+G4WT0 >     1      -27     26.9  1.4e+03         0  0.00157    0.111     0.111       World eIoni
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0      7.4     46.2        0      5.72        0        0         0       World initStep
+G4WT0 >     1      7.4     46.2      995      5.72        0      995       995        RepY Transportation
+G4WT0 >     2      7.4     46.2    1e+03      5.72        0       10     1e+03       World Transportation
+G4WT0 >     3      7.4     46.2  1.5e+03      5.72        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -12.1    -36.6        0     0.306        0        0         0       World initStep
+G4WT0 >     1    -12.1    -36.6      995     0.306        0      995       995        RepY Transportation
+G4WT0 >     2    -12.1    -36.6    1e+03     0.306        0       10     1e+03       World Transportation
+G4WT0 >     3    -12.1    -36.6  1.5e+03     0.306        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     39.6    -3.61        0      1.28        0        0         0       World initStep
+G4WT0 >     1     39.6    -3.61      995      1.28        0      995       995        RepY Transportation
+G4WT0 >     2     39.6    -3.61    1e+03      1.28        0       10     1e+03       World Transportation
+G4WT0 >     3     39.6    -3.61  1.5e+03      1.28        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     27.1      -19        0     0.419        0        0         0       World initStep
+G4WT0 >     1     27.1      -19      995     0.419        0      995       995        RepY Transportation
+G4WT0 >     2     27.1      -19    1e+03     0.419        0       10     1e+03       World Transportation
+G4WT0 >     3     27.1      -19  1.5e+03     0.419        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is7
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     6.84    -30.5        0     0.337        0        0         0       World initStep
+G4WT0 >     1     6.84    -30.5      995     0.337        0      995       995        RepY Transportation
+G4WT0 >     2     6.84    -30.5      995     0.331        0    0.118       995        RepY compt
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  1 ---------------
+G4WT0 >     :      6.84     -30.5       995   0.00641                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     3     8.01    -32.6    1e+03     0.331        0     10.2  1.01e+03       World Transportation
+G4WT0 >     4     66.6     -140  1.5e+03     0.331        0      510  1.52e+03  OutOfWorld Transportation
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     6.84    -30.5      995   0.00641        0        0         0        RepY initStep
+G4WT0 >     1     6.84    -30.5      995         0  0.00641  0.00118   0.00118        RepY eIoni
+G4WT0 > nParticle is8
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -43.8     42.3        0     0.711        0        0         0       World initStep
+G4WT0 >     1    -43.8     42.3      995     0.711        0      995       995        RepY Transportation
+G4WT0 >     2    -43.8     42.3    1e+03     0.711        0       10     1e+03       World Transportation
+G4WT0 >     3    -43.8     42.3  1.5e+03     0.711        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is9
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     41.4     13.9        0      1.19        0        0         0       World initStep
+G4WT0 >     1     41.4     13.9      995      1.19        0      995       995        RepY Transportation
+G4WT0 >     2     41.4     13.9    1e+03      1.19        0       10     1e+03       World Transportation
+G4WT0 >     3     41.4     13.9  1.5e+03      1.19        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is10
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     25.6     41.7        0      1.46        0        0         0       World initStep
+G4WT0 >     1     25.6     41.7      995      1.46        0      995       995        RepY Transportation
+G4WT0 >     2     25.6     41.7    1e+03      1.46        0       10     1e+03       World Transportation
+G4WT0 >     3     25.6     41.7  1.5e+03      1.46        0      495   1.5e+03  OutOfWorld Transportation
+loaded 10/10 particles
+9-th times fills the particle containers 
+G4WT0 > nParticle is1
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -44.2    -8.24        0      1.93        0        0         0       World initStep
+G4WT0 >     1    -44.2    -8.24      995      1.93        0      995       995        RepY Transportation
+G4WT0 >     2    -44.2    -8.24    1e+03      1.93        0       10     1e+03       World Transportation
+G4WT0 >     3    -44.2    -8.24  1.5e+03      1.93        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is2
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -36.3    -26.7        0      0.77        0        0         0       World initStep
+G4WT0 >     1    -36.3    -26.7      995      0.77        0      995       995        RepY Transportation
+G4WT0 >     2    -36.3    -26.7    1e+03      0.77        0       10     1e+03       World Transportation
+G4WT0 >     3    -36.3    -26.7  1.5e+03      0.77        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is3
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     41.6    -36.4        0     0.826        0        0         0       World initStep
+G4WT0 >     1     41.6    -36.4      995     0.826        0      995       995        RepY Transportation
+G4WT0 >     2     41.6    -36.4    1e+03     0.826        0       10     1e+03       World Transportation
+G4WT0 >     3     41.6    -36.4  1.5e+03     0.826        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is4
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -12.7     30.2        0      1.96        0        0         0       World initStep
+G4WT0 >     1    -12.7     30.2      995      1.96        0      995       995        RepY Transportation
+G4WT0 >     2    -12.7     30.2    1e+03      1.96        0       10     1e+03       World Transportation
+G4WT0 >     3    -12.7     30.2  1.5e+03      1.96        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > nParticle is5
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -41.3    -11.5        0     0.382        0        0         0       World initStep
+G4WT0 >     1    -41.3    -11.5      995     0.382        0      995       995        RepY Transportation
+G4WT0 >     2    -41.3    -11.5    1e+03     0.162        0     9.24     1e+03        RepY compt
+G4WT0 >     :----- List of 2ndaries - #SpawnInStep=  1(Rest= 0,Along= 0,Post= 1), #SpawnTotal=  1 ---------------
+G4WT0 >     :     -41.3     -11.5     1e+03      0.22                 e-
+G4WT0 >     :----------------------------------------------------------------- EndOf2ndaries Info ---------------
+G4WT0 >     3    -46.4    -15.6      995     0.162        0     11.3  1.02e+03       World Transportation
+G4WT0 >     4 -1.42e+03 -1.12e+03 -1.5e+03     0.162        0 3.06e+03  4.07e+03  OutOfWorld Transportation
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = e-,   Track ID = 2,   Parent ID = 1
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0    -41.3    -11.5    1e+03      0.22        0        0         0        RepY initStep
+G4WT0 >     1    -41.2    -11.4    1e+03         0     0.22    0.524     0.524        RepY eIoni
+G4WT0 > nParticle is6
+G4WT0 > 
+G4WT0 > *********************************************************************************************************
+G4WT0 > * G4Track Information:   Particle = gamma,   Track ID = 1,   Parent ID = 0
+G4WT0 > *********************************************************************************************************
+G4WT0 > 
+G4WT0 > Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+G4WT0 >     0     26.6    -8.65        0      2.14        0        0         0       World initStep
+G4WT0 >     1     26.6    -8.65      995      2.14        0      995       995        RepY Transportation
+G4WT0 >     2     26.6    -8.65    1e+03      2.14        0       10     1e+03       World Transportation
+G4WT0 >     3     26.6    -8.65  1.5e+03      2.14        0      495   1.5e+03  OutOfWorld Transportation
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 86
+G4WT0 >   User=0.02s Real=0.01s Sys=0s

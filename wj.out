@@ -1,0 +1,1220 @@
+
+*************************************************************
+ Geant4 version Name: geant4-10-02-patch-02 [MT]   (17-June-2016)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+ASCIITree (ATree)
+DAWNFILE (DAWNFILE)
+G4HepRep (HepRepXML)
+G4HepRepFile (HepRepFile)
+RayTracer (RayTracer)
+VRML1FILE (VRML1FILE)
+VRML2FILE (VRML2FILE)
+gMocrenFile (gMocrenFile)
+OpenGLImmediateQt (OGLIQt, OGLI)
+OpenGLStoredQt (OGLSQt, OGL, OGLS)
+OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: neutronInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 9.5 GeV ---> 25 GeV
+        Model:            Binary Cascade: 0 eV  ---> 9.9 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:            BertiniCascade: 0 eV  ---> 3.5 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: kaon+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:  ChipsKaonPlusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: kaon-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns: ChipsKaonMinusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: lambdaInelastic
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns:   ChipsHyperonInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: pi+Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: pi-Inelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 4 GeV ---> 25 GeV
+        Model:            BertiniCascade: 0 eV  ---> 5 GeV
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:      G4CrossSectionPairGG: 0 eV  ---> 100 TeV
+                         G4CrossSectionPairGG: G4PiNuclearCrossSection cross sections 
+                           below 91 GeV, Glauber-Gribov above 
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: protonInelastic
+        Model:                      QGSP: 12 GeV ---> 100 TeV
+        Model:                      FTFP: 9.5 GeV ---> 25 GeV
+        Model:            Binary Cascade: 0 eV  ---> 9.9 GeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:      ChipsProtonElasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns: Glauber-Gribov nucleus nucleus: 0 eV  ---> 2.88022e+295 J  
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_AIR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : G4_WATER
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.94056 keV    e-  351.877 keV    e+  342.545 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 0 starts.
+--> Event 0 starts.
+currentFilePosition is on container179
+currentFilePosition is on container251
+currentFilePosition is on container323
+currentFilePosition is on container393
+currentFilePosition is on container466
+currentFilePosition is on container538
+currentFilePosition is on container612
+currentFilePosition is on container682
+currentFilePosition is on container753
+currentFilePosition is on container825
+currentFilePosition is on container896
+currentFilePosition is on container969
+currentFilePosition is on container1044
+currentFilePosition is on container1114
+currentFilePosition is on container1184
+currentFilePosition is on container1254
+currentFilePosition is on container1328
+currentFilePosition is on container1403
+currentFilePosition is on container1477
+currentFilePosition is on container1553
+currentFilePosition is on container1626
+currentFilePosition is on container1696
+currentFilePosition is on container1772
+currentFilePosition is on container1847
+currentFilePosition is on container1923
+currentFilePosition is on container1999
+currentFilePosition is on container2074
+currentFilePosition is on container2148
+currentFilePosition is on container2222
+currentFilePosition is on container2298
+currentFilePosition is on container2373
+currentFilePosition is on container2447
+currentFilePosition is on container2520
+currentFilePosition is on container2591
+currentFilePosition is on container2666
+currentFilePosition is on container2741
+currentFilePosition is on container2816
+currentFilePosition is on container2890
+currentFilePosition is on container2966
+currentFilePosition is on container3043
+currentFilePosition is on container3120
+currentFilePosition is on container3196
+currentFilePosition is on container3271
+currentFilePosition is on container3346
+currentFilePosition is on container3421
+currentFilePosition is on container3497
+currentFilePosition is on container3573
+currentFilePosition is on container3644
+currentFilePosition is on container3718
+currentFilePosition is on container3793
+currentFilePosition is on container3866
+currentFilePosition is on container3940
+currentFilePosition is on container4017
+currentFilePosition is on container4092
+currentFilePosition is on container4167
+currentFilePosition is on container4242
+currentFilePosition is on container4317
+currentFilePosition is on container4391
+currentFilePosition is on container4467
+currentFilePosition is on container4541
+currentFilePosition is on container4617
+currentFilePosition is on container4690
+currentFilePosition is on container4763
+currentFilePosition is on container4838
+currentFilePosition is on container4912
+currentFilePosition is on container4988
+currentFilePosition is on container5062
+currentFilePosition is on container5137
+currentFilePosition is on container5211
+currentFilePosition is on container5286
+currentFilePosition is on container5362
+currentFilePosition is on container5436
+currentFilePosition is on container5511
+currentFilePosition is on container5583
+currentFilePosition is on container5657
+currentFilePosition is on container5731
+currentFilePosition is on container5806
+currentFilePosition is on container5875
+currentFilePosition is on container5948
+currentFilePosition is on container6021
+currentFilePosition is on container6093
+currentFilePosition is on container6166
+currentFilePosition is on container6242
+currentFilePosition is on container6318
+currentFilePosition is on container6392
+currentFilePosition is on container6468
+currentFilePosition is on container6540
+currentFilePosition is on container6614
+currentFilePosition is on container6687
+currentFilePosition is on container6759
+currentFilePosition is on container6833
+currentFilePosition is on container6909
+currentFilePosition is on container6985
+currentFilePosition is on container7061
+currentFilePosition is on container7134
+currentFilePosition is on container7210
+currentFilePosition is on container7284
+currentFilePosition is on container7358
+currentFilePosition is on container7433
+currentFilePosition is on container7509
+aParticle_return.dir is (0.0275576,-0.0146575,0.999513)
+aParticle_return.kinEnergy is 4.03132
+ nGeneratedPrimaries is 1
+aParticle_return.dir is (-0.0250857,-0.0340948,0.999104)
+aParticle_return.kinEnergy is 0.313197
+ nGeneratedPrimaries is 2
+aParticle_return.dir is (0.0193163,0.022835,0.999553)
+aParticle_return.kinEnergy is 1.6017
+ nGeneratedPrimaries is 3
+aParticle_return.dir is (-0.0174226,-0.043504,0.998901)
+aParticle_return.kinEnergy is 0.178944
+ nGeneratedPrimaries is 4
+aParticle_return.dir is (0.00139518,0.0461341,0.998934)
+aParticle_return.kinEnergy is 0.42918
+ nGeneratedPrimaries is 5
+aParticle_return.dir is (-0.00752354,0.0340779,0.999391)
+aParticle_return.kinEnergy is 0.953288
+ nGeneratedPrimaries is 6
+aParticle_return.dir is (0.450689,-0.53777,0.712519)
+aParticle_return.kinEnergy is 0.510999
+ nGeneratedPrimaries is 7
+aParticle_return.dir is (-0.283601,-0.159624,0.945564)
+aParticle_return.kinEnergy is 0.85335
+ nGeneratedPrimaries is 8
+aParticle_return.dir is (0.00476656,-0.0425217,0.999084)
+aParticle_return.kinEnergy is 4.51767
+ nGeneratedPrimaries is 9
+aParticle_return.dir is (0.0105291,0.0136779,0.999851)
+aParticle_return.kinEnergy is 1.05753
+ nGeneratedPrimaries is 10
+aParticle_return.dir is (0.0240308,0.0233239,0.999439)
+aParticle_return.kinEnergy is 1.44901
+ nGeneratedPrimaries is 11
+aParticle_return.dir is (-0.00102058,-0.0322621,0.999479)
+aParticle_return.kinEnergy is 0.410133
+ nGeneratedPrimaries is 12
+aParticle_return.dir is (0.0222198,0.0406251,0.998927)
+aParticle_return.kinEnergy is 3.02922
+ nGeneratedPrimaries is 13
+aParticle_return.dir is (0.0301935,0.0437977,0.998584)
+aParticle_return.kinEnergy is 2.5449
+ nGeneratedPrimaries is 14
+aParticle_return.dir is (0.285027,0.385697,0.877495)
+aParticle_return.kinEnergy is 0.564863
+ nGeneratedPrimaries is 15
+aParticle_return.dir is (0.0092388,0.0333396,0.999401)
+aParticle_return.kinEnergy is 0.315286
+ nGeneratedPrimaries is 16
+aParticle_return.dir is (-0.00213963,-0.0302495,0.99954)
+aParticle_return.kinEnergy is 0.405437
+ nGeneratedPrimaries is 17
+aParticle_return.dir is (0.0198738,-0.0423342,0.998906)
+aParticle_return.kinEnergy is 1.71804
+ nGeneratedPrimaries is 18
+aParticle_return.dir is (0.0237109,-0.00162834,0.999718)
+aParticle_return.kinEnergy is 2.65707
+ nGeneratedPrimaries is 19
+aParticle_return.dir is (-0.0153186,-0.0014107,0.999882)
+aParticle_return.kinEnergy is 0.508149
+ nGeneratedPrimaries is 20
+aParticle_return.dir is (-0.18921,0.362979,0.912385)
+aParticle_return.kinEnergy is 2.10205
+ nGeneratedPrimaries is 21
+aParticle_return.dir is (0.0286023,-0.00380558,0.999584)
+aParticle_return.kinEnergy is 0.534772
+ nGeneratedPrimaries is 22
+aParticle_return.dir is (-0.0120888,-0.00408906,0.999919)
+aParticle_return.kinEnergy is 1.99546
+ nGeneratedPrimaries is 23
+aParticle_return.dir is (0.0239543,-0.0365254,0.999046)
+aParticle_return.kinEnergy is 0.534165
+ nGeneratedPrimaries is 24
+aParticle_return.dir is (-0.0374751,-0.0280548,0.998904)
+aParticle_return.kinEnergy is 0.517594
+ nGeneratedPrimaries is 25
+aParticle_return.dir is (0.0122843,-0.0032333,0.999919)
+aParticle_return.kinEnergy is 1.69232
+ nGeneratedPrimaries is 26
+aParticle_return.dir is (-0.00068526,0.0440328,0.99903)
+aParticle_return.kinEnergy is 0.235672
+ nGeneratedPrimaries is 27
+aParticle_return.dir is (0.0123254,0.0189855,0.999744)
+aParticle_return.kinEnergy is 0.453081
+ nGeneratedPrimaries is 28
+aParticle_return.dir is (-0.0187506,-0.0165781,0.999687)
+aParticle_return.kinEnergy is 2.06477
+ nGeneratedPrimaries is 29
+aParticle_return.dir is (-0.0325597,-0.040364,0.998654)
+aParticle_return.kinEnergy is 0.765681
+ nGeneratedPrimaries is 30
+aParticle_return.dir is (-0.00170642,0.0127417,0.999917)
+aParticle_return.kinEnergy is 1.66118
+ nGeneratedPrimaries is 31
+aParticle_return.dir is (0.0599821,0.0240099,0.997911)
+aParticle_return.kinEnergy is 0.957103
+ nGeneratedPrimaries is 32
+aParticle_return.dir is (0.0310949,0.0495003,0.99829)
+aParticle_return.kinEnergy is 1.35284
+ nGeneratedPrimaries is 33
+aParticle_return.dir is (0.00336869,0.0313711,0.999502)
+aParticle_return.kinEnergy is 0.619711
+ nGeneratedPrimaries is 34
+aParticle_return.dir is (-0.0324528,-0.022433,0.999221)
+aParticle_return.kinEnergy is 1.33536
+ nGeneratedPrimaries is 35
+aParticle_return.dir is (-0.0302523,0.00114884,0.999542)
+aParticle_return.kinEnergy is 0.524453
+ nGeneratedPrimaries is 36
+aParticle_return.dir is (-0.711098,0.11629,0.693409)
+aParticle_return.kinEnergy is 0.927629
+ nGeneratedPrimaries is 37
+aParticle_return.dir is (-0.000212879,0.0468619,0.998901)
+aParticle_return.kinEnergy is 0.458056
+ nGeneratedPrimaries is 38
+aParticle_return.dir is (-0.0335485,0.00814521,0.999404)
+aParticle_return.kinEnergy is 0.524707
+ nGeneratedPrimaries is 39
+aParticle_return.dir is (-0.0401632,-0.0132905,0.999105)
+aParticle_return.kinEnergy is 0.264738
+ nGeneratedPrimaries is 40
+aParticle_return.dir is (-0.0028083,-0.0312181,0.999509)
+aParticle_return.kinEnergy is 0.449426
+ nGeneratedPrimaries is 41
+aParticle_return.dir is (0.0139953,-0.0241128,0.999611)
+aParticle_return.kinEnergy is 1.31352
+ nGeneratedPrimaries is 42
+aParticle_return.dir is (-0.0310048,-0.0146308,0.999412)
+aParticle_return.kinEnergy is 0.985644
+ nGeneratedPrimaries is 43
+aParticle_return.dir is (-0.0119209,0.0244587,0.99963)
+aParticle_return.kinEnergy is 0.612576
+ nGeneratedPrimaries is 44
+aParticle_return.dir is (-0.0300965,-0.0256525,0.999218)
+aParticle_return.kinEnergy is 0.97855
+ nGeneratedPrimaries is 45
+aParticle_return.dir is (-0.0298905,-0.0155795,0.999432)
+aParticle_return.kinEnergy is 1.39596
+ nGeneratedPrimaries is 46
+aParticle_return.dir is (0.0133547,-0.439212,0.898284)
+aParticle_return.kinEnergy is 0.7336
+ nGeneratedPrimaries is 47
+aParticle_return.dir is (0.018714,0.00903668,0.999784)
+aParticle_return.kinEnergy is 3.01665
+ nGeneratedPrimaries is 48
+aParticle_return.dir is (-0.0089174,-0.0147305,0.999852)
+aParticle_return.kinEnergy is 1.52945
+ nGeneratedPrimaries is 49
+aParticle_return.dir is (0.0271728,-0.035897,0.998986)
+aParticle_return.kinEnergy is 1.38521
+ nGeneratedPrimaries is 50
+aParticle_return.dir is (-0.454139,0.734729,0.503915)
+aParticle_return.kinEnergy is 0.510999
+ nGeneratedPrimaries is 51
+aParticle_return.dir is (-0.00846423,-0.013165,0.999878)
+aParticle_return.kinEnergy is 0.556648
+ nGeneratedPrimaries is 52
+aParticle_return.dir is (-0.345497,-0.743668,0.572355)
+aParticle_return.kinEnergy is 0.530864
+ nGeneratedPrimaries is 53
+aParticle_return.dir is (-0.0200967,-0.0353001,0.999175)
+aParticle_return.kinEnergy is 1.82392
+ nGeneratedPrimaries is 54
+aParticle_return.dir is (-0.0103741,-0.00269407,0.999943)
+aParticle_return.kinEnergy is 2.4293
+ nGeneratedPrimaries is 55
+aParticle_return.dir is (-0.00839526,0.0378547,0.999248)
+aParticle_return.kinEnergy is 0.50149
+ nGeneratedPrimaries is 56
+aParticle_return.dir is (0.0112564,-0.0193878,0.999749)
+aParticle_return.kinEnergy is 1.58328
+ nGeneratedPrimaries is 57
+aParticle_return.dir is (0.0183498,-0.00304549,0.999827)
+aParticle_return.kinEnergy is 1.12457
+ nGeneratedPrimaries is 58
+aParticle_return.dir is (-0.0728285,-0.28523,0.955688)
+aParticle_return.kinEnergy is 4.39961
+ nGeneratedPrimaries is 59
+aParticle_return.dir is (0.0225186,-0.000315644,0.999746)
+aParticle_return.kinEnergy is 0.858375
+ nGeneratedPrimaries is 60
+aParticle_return.dir is (0.0176702,0.0176915,0.999687)
+aParticle_return.kinEnergy is 0.420857
+ nGeneratedPrimaries is 61
+aParticle_return.dir is (0.0127591,0.0410714,0.999075)
+aParticle_return.kinEnergy is 1.11307
+ nGeneratedPrimaries is 62
+aParticle_return.dir is (-0.017093,-0.0301474,0.999399)
+aParticle_return.kinEnergy is 0.395834
+ nGeneratedPrimaries is 63
+aParticle_return.dir is (0.00230514,-0.03111,0.999513)
+aParticle_return.kinEnergy is 2.29773
+ nGeneratedPrimaries is 64
+aParticle_return.dir is (-0.00937846,-0.0143642,0.999853)
+aParticle_return.kinEnergy is 1.97596
+ nGeneratedPrimaries is 65
+aParticle_return.dir is (-0.0146717,0.0309596,0.999413)
+aParticle_return.kinEnergy is 1.81988
+ nGeneratedPrimaries is 66
+aParticle_return.dir is (-0.0353863,-0.0236582,0.999094)
+aParticle_return.kinEnergy is 0.2487
+ nGeneratedPrimaries is 67
+aParticle_return.dir is (-0.0362352,-0.00908498,0.999302)
+aParticle_return.kinEnergy is 1.3989
+ nGeneratedPrimaries is 68
+aParticle_return.dir is (0.0106474,-0.0296794,0.999503)
+aParticle_return.kinEnergy is 1.94212
+ nGeneratedPrimaries is 69
+aParticle_return.dir is (-0.00146148,0.0344262,0.999406)
+aParticle_return.kinEnergy is 0.466049
+ nGeneratedPrimaries is 70
+aParticle_return.dir is (0.014613,-0.0472168,0.998778)
+aParticle_return.kinEnergy is 0.747106
+ nGeneratedPrimaries is 71
+aParticle_return.dir is (-0.0149473,-0.0133431,0.999799)
+aParticle_return.kinEnergy is 0.178288
+ nGeneratedPrimaries is 72
+aParticle_return.dir is (0.0123579,0.0368719,0.999244)
+aParticle_return.kinEnergy is 5.71834
+ nGeneratedPrimaries is 73
+aParticle_return.dir is (-0.008855,0.0138521,0.999865)
+aParticle_return.kinEnergy is 0.306482
+ nGeneratedPrimaries is 74
+aParticle_return.dir is (0.0106752,-0.038302,0.999209)
+aParticle_return.kinEnergy is 1.28352
+ nGeneratedPrimaries is 75
+aParticle_return.dir is (-0.0338354,-0.0164125,0.999293)
+aParticle_return.kinEnergy is 0.418735
+ nGeneratedPrimaries is 76
+aParticle_return.dir is (0.024664,0.042301,0.9988)
+aParticle_return.kinEnergy is 0.337357
+ nGeneratedPrimaries is 77
+aParticle_return.dir is (0.0301585,0.043894,0.998581)
+aParticle_return.kinEnergy is 0.710543
+ nGeneratedPrimaries is 78
+aParticle_return.dir is (-0.0328465,0.0224094,0.999209)
+aParticle_return.kinEnergy is 1.19157
+ nGeneratedPrimaries is 79
+aParticle_return.dir is (-0.0373846,0.281955,0.958699)
+aParticle_return.kinEnergy is 1.46497
+ nGeneratedPrimaries is 80
+aParticle_return.dir is (0.00670696,0.0203039,0.999771)
+aParticle_return.kinEnergy is 1.92574
+ nGeneratedPrimaries is 81
+aParticle_return.dir is (0.00243965,-0.00907598,0.999956)
+aParticle_return.kinEnergy is 0.769513
+ nGeneratedPrimaries is 82
+aParticle_return.dir is (0.00656816,0.00203291,0.999976)
+aParticle_return.kinEnergy is 0.825806
+ nGeneratedPrimaries is 83
+aParticle_return.dir is (0.0131871,-0.0466842,0.998823)
+aParticle_return.kinEnergy is 1.95969
+ nGeneratedPrimaries is 84
+aParticle_return.dir is (-0.0163917,0.0312338,0.999378)
+aParticle_return.kinEnergy is 0.381535
+ nGeneratedPrimaries is 85
+aParticle_return.dir is (-0.0313072,-0.0218874,0.99927)
+aParticle_return.kinEnergy is 2.14326
+ nGeneratedPrimaries is 86
+aParticle_return.dir is (0.0132503,0.00891868,0.999872)
+aParticle_return.kinEnergy is 0.55084
+ nGeneratedPrimaries is 87
+aParticle_return.dir is (-0.0098133,0.011415,0.999887)
+aParticle_return.kinEnergy is 0.28234
+ nGeneratedPrimaries is 88
+aParticle_return.dir is (-0.0152861,0.0457117,0.998838)
+aParticle_return.kinEnergy is 1.30482
+ nGeneratedPrimaries is 89
+aParticle_return.dir is (0.00915163,0.0147277,0.99985)
+aParticle_return.kinEnergy is 4.40644
+ nGeneratedPrimaries is 90
+aParticle_return.dir is (-0.0170335,-0.0364783,0.999189)
+aParticle_return.kinEnergy is 5.94458
+ nGeneratedPrimaries is 91
+aParticle_return.dir is (-0.0165464,-0.018496,0.999692)
+aParticle_return.kinEnergy is 1.20816
+ nGeneratedPrimaries is 92
+aParticle_return.dir is (-0.000158977,-0.0185952,0.999827)
+aParticle_return.kinEnergy is 5.72872
+ nGeneratedPrimaries is 93
+aParticle_return.dir is (0.00704777,0.00308022,0.99997)
+aParticle_return.kinEnergy is 2.3021
+ nGeneratedPrimaries is 94
+aParticle_return.dir is (-0.00271617,0.045345,0.998968)
+aParticle_return.kinEnergy is 0.840881
+ nGeneratedPrimaries is 95
+aParticle_return.dir is (-0.00692969,-0.0452914,0.99895)
+aParticle_return.kinEnergy is 1.57812
+ nGeneratedPrimaries is 96
+aParticle_return.dir is (0.00750816,0.0154676,0.999852)
+aParticle_return.kinEnergy is 0.476324
+ nGeneratedPrimaries is 97
+aParticle_return.dir is (0.0265156,-0.0341162,0.999066)
+aParticle_return.kinEnergy is 0.719494
+ nGeneratedPrimaries is 98
+aParticle_return.dir is (-0.005554,0.00993561,0.999935)
+aParticle_return.kinEnergy is 0.296926
+ nGeneratedPrimaries is 99
+aParticle_return.dir is (8.60485e-05,0.0205062,0.99979)
+aParticle_return.kinEnergy is 1.44347
+ nGeneratedPrimaries is 100
+currentFilePosition is on container7584
+currentFilePosition is on container179
+currentFilePosition is on container251
+currentFilePosition is on container323
+currentFilePosition is on container393
+currentFilePosition is on container466
+currentFilePosition is on container538
+currentFilePosition is on container612
+currentFilePosition is on container682
+currentFilePosition is on container753
+currentFilePosition is on container825
+currentFilePosition is on container896
+currentFilePosition is on container969
+currentFilePosition is on container1044
+currentFilePosition is on container1114
+currentFilePosition is on container1184
+currentFilePosition is on container1254
+currentFilePosition is on container1328
+currentFilePosition is on container1403
+currentFilePosition is on container1477
+currentFilePosition is on container1553
+currentFilePosition is on container1626
+currentFilePosition is on container1696
+currentFilePosition is on container1772
+currentFilePosition is on container1847
+currentFilePosition is on container1923
+currentFilePosition is on container1999
+currentFilePosition is on container2074
+currentFilePosition is on container2148
+currentFilePosition is on container2222
+currentFilePosition is on container2298
+currentFilePosition is on container2373
+currentFilePosition is on container2447
+currentFilePosition is on container2520
+currentFilePosition is on container2591
+currentFilePosition is on container2666
+currentFilePosition is on container2741
+currentFilePosition is on container2816
+currentFilePosition is on container2890
+currentFilePosition is on container2966
+currentFilePosition is on container3043
+currentFilePosition is on container3120
+currentFilePosition is on container3196
+currentFilePosition is on container3271
+currentFilePosition is on container3346
+currentFilePosition is on container3421
+currentFilePosition is on container3497
+currentFilePosition is on container3573
+currentFilePosition is on container3644
+currentFilePosition is on container3718
+currentFilePosition is on container3793
+currentFilePosition is on container3866
+currentFilePosition is on container3940
+currentFilePosition is on container4017
+currentFilePosition is on container4092
+currentFilePosition is on container4167
+currentFilePosition is on container4242
+currentFilePosition is on container4317
+currentFilePosition is on container4391
+currentFilePosition is on container4467
+currentFilePosition is on container4541
+currentFilePosition is on container4617
+currentFilePosition is on container4690
+currentFilePosition is on container4763
+currentFilePosition is on container4838
+currentFilePosition is on container4912
+currentFilePosition is on container4988
+currentFilePosition is on container5062
+currentFilePosition is on container5137
+currentFilePosition is on container5211
+currentFilePosition is on container5286
+currentFilePosition is on container5362
+currentFilePosition is on container5436
+currentFilePosition is on container5511
+currentFilePosition is on container5583
+currentFilePosition is on container5657
+currentFilePosition is on container5731
+currentFilePosition is on container5806
+currentFilePosition is on container5875
+currentFilePosition is on container5948
+currentFilePosition is on container6021
+currentFilePosition is on container6093
+currentFilePosition is on container6166
+currentFilePosition is on container6242
+currentFilePosition is on container6318
+currentFilePosition is on container6392
+currentFilePosition is on container6468
+currentFilePosition is on container6540
+currentFilePosition is on container6614
+currentFilePosition is on container6687
+currentFilePosition is on container6759
+currentFilePosition is on container6833
+currentFilePosition is on container6909
+currentFilePosition is on container6985
+currentFilePosition is on container7061
+currentFilePosition is on container7134
+currentFilePosition is on container7210
+currentFilePosition is on container7284
+currentFilePosition is on container7358
+currentFilePosition is on container7433
+aParticle_return.dir is (0.0261786,-0.0139512,0.99956)
+aParticle_return.kinEnergy is 0.725796
+ nGeneratedPrimaries is 101
+aParticle_return.dir is (0.0275576,-0.0146575,0.999513)
+aParticle_return.kinEnergy is 4.03132
+ nGeneratedPrimaries is 102
+aParticle_return.dir is (-0.0250857,-0.0340948,0.999104)
+aParticle_return.kinEnergy is 0.313197
+ nGeneratedPrimaries is 103
+aParticle_return.dir is (0.0193163,0.022835,0.999553)
+aParticle_return.kinEnergy is 1.6017
+ nGeneratedPrimaries is 104
+aParticle_return.dir is (-0.0174226,-0.043504,0.998901)
+aParticle_return.kinEnergy is 0.178944
+ nGeneratedPrimaries is 105
+aParticle_return.dir is (0.00139518,0.0461341,0.998934)
+aParticle_return.kinEnergy is 0.42918
+ nGeneratedPrimaries is 106
+aParticle_return.dir is (-0.00752354,0.0340779,0.999391)
+aParticle_return.kinEnergy is 0.953288
+ nGeneratedPrimaries is 107
+aParticle_return.dir is (0.450689,-0.53777,0.712519)
+aParticle_return.kinEnergy is 0.510999
+ nGeneratedPrimaries is 108
+aParticle_return.dir is (-0.283601,-0.159624,0.945564)
+aParticle_return.kinEnergy is 0.85335
+ nGeneratedPrimaries is 109
+aParticle_return.dir is (0.00476656,-0.0425217,0.999084)
+aParticle_return.kinEnergy is 4.51767
+ nGeneratedPrimaries is 110
+aParticle_return.dir is (0.0105291,0.0136779,0.999851)
+aParticle_return.kinEnergy is 1.05753
+ nGeneratedPrimaries is 111
+aParticle_return.dir is (0.0240308,0.0233239,0.999439)
+aParticle_return.kinEnergy is 1.44901
+ nGeneratedPrimaries is 112
+aParticle_return.dir is (-0.00102058,-0.0322621,0.999479)
+aParticle_return.kinEnergy is 0.410133
+ nGeneratedPrimaries is 113
+aParticle_return.dir is (0.0222198,0.0406251,0.998927)
+aParticle_return.kinEnergy is 3.02922
+ nGeneratedPrimaries is 114
+aParticle_return.dir is (0.0301935,0.0437977,0.998584)
+aParticle_return.kinEnergy is 2.5449
+ nGeneratedPrimaries is 115
+aParticle_return.dir is (0.285027,0.385697,0.877495)
+aParticle_return.kinEnergy is 0.564863
+ nGeneratedPrimaries is 116
+aParticle_return.dir is (0.0092388,0.0333396,0.999401)
+aParticle_return.kinEnergy is 0.315286
+ nGeneratedPrimaries is 117
+aParticle_return.dir is (-0.00213963,-0.0302495,0.99954)
+aParticle_return.kinEnergy is 0.405437
+ nGeneratedPrimaries is 118
+aParticle_return.dir is (0.0198738,-0.0423342,0.998906)
+aParticle_return.kinEnergy is 1.71804
+ nGeneratedPrimaries is 119
+aParticle_return.dir is (0.0237109,-0.00162834,0.999718)
+aParticle_return.kinEnergy is 2.65707
+ nGeneratedPrimaries is 120
+aParticle_return.dir is (-0.0153186,-0.0014107,0.999882)
+aParticle_return.kinEnergy is 0.508149
+ nGeneratedPrimaries is 121
+aParticle_return.dir is (-0.18921,0.362979,0.912385)
+aParticle_return.kinEnergy is 2.10205
+ nGeneratedPrimaries is 122
+aParticle_return.dir is (0.0286023,-0.00380558,0.999584)
+aParticle_return.kinEnergy is 0.534772
+ nGeneratedPrimaries is 123
+aParticle_return.dir is (-0.0120888,-0.00408906,0.999919)
+aParticle_return.kinEnergy is 1.99546
+ nGeneratedPrimaries is 124
+aParticle_return.dir is (0.0239543,-0.0365254,0.999046)
+aParticle_return.kinEnergy is 0.534165
+ nGeneratedPrimaries is 125
+aParticle_return.dir is (-0.0374751,-0.0280548,0.998904)
+aParticle_return.kinEnergy is 0.517594
+ nGeneratedPrimaries is 126
+aParticle_return.dir is (0.0122843,-0.0032333,0.999919)
+aParticle_return.kinEnergy is 1.69232
+ nGeneratedPrimaries is 127
+aParticle_return.dir is (-0.00068526,0.0440328,0.99903)
+aParticle_return.kinEnergy is 0.235672
+ nGeneratedPrimaries is 128
+aParticle_return.dir is (0.0123254,0.0189855,0.999744)
+aParticle_return.kinEnergy is 0.453081
+ nGeneratedPrimaries is 129
+aParticle_return.dir is (-0.0187506,-0.0165781,0.999687)
+aParticle_return.kinEnergy is 2.06477
+ nGeneratedPrimaries is 130
+aParticle_return.dir is (-0.0325597,-0.040364,0.998654)
+aParticle_return.kinEnergy is 0.765681
+ nGeneratedPrimaries is 131
+aParticle_return.dir is (-0.00170642,0.0127417,0.999917)
+aParticle_return.kinEnergy is 1.66118
+ nGeneratedPrimaries is 132
+aParticle_return.dir is (0.0599821,0.0240099,0.997911)
+aParticle_return.kinEnergy is 0.957103
+ nGeneratedPrimaries is 133
+aParticle_return.dir is (0.0310949,0.0495003,0.99829)
+aParticle_return.kinEnergy is 1.35284
+ nGeneratedPrimaries is 134
+aParticle_return.dir is (0.00336869,0.0313711,0.999502)
+aParticle_return.kinEnergy is 0.619711
+ nGeneratedPrimaries is 135
+aParticle_return.dir is (-0.0324528,-0.022433,0.999221)
+aParticle_return.kinEnergy is 1.33536
+ nGeneratedPrimaries is 136
+aParticle_return.dir is (-0.0302523,0.00114884,0.999542)
+aParticle_return.kinEnergy is 0.524453
+ nGeneratedPrimaries is 137
+aParticle_return.dir is (-0.711098,0.11629,0.693409)
+aParticle_return.kinEnergy is 0.927629
+ nGeneratedPrimaries is 138
+aParticle_return.dir is (-0.000212879,0.0468619,0.998901)
+aParticle_return.kinEnergy is 0.458056
+ nGeneratedPrimaries is 139
+aParticle_return.dir is (-0.0335485,0.00814521,0.999404)
+aParticle_return.kinEnergy is 0.524707
+ nGeneratedPrimaries is 140
+aParticle_return.dir is (-0.0401632,-0.0132905,0.999105)
+aParticle_return.kinEnergy is 0.264738
+ nGeneratedPrimaries is 141
+aParticle_return.dir is (-0.0028083,-0.0312181,0.999509)
+aParticle_return.kinEnergy is 0.449426
+ nGeneratedPrimaries is 142
+aParticle_return.dir is (0.0139953,-0.0241128,0.999611)
+aParticle_return.kinEnergy is 1.31352
+ nGeneratedPrimaries is 143
+aParticle_return.dir is (-0.0310048,-0.0146308,0.999412)
+aParticle_return.kinEnergy is 0.985644
+ nGeneratedPrimaries is 144
+aParticle_return.dir is (-0.0119209,0.0244587,0.99963)
+aParticle_return.kinEnergy is 0.612576
+ nGeneratedPrimaries is 145
+aParticle_return.dir is (-0.0300965,-0.0256525,0.999218)
+aParticle_return.kinEnergy is 0.97855
+ nGeneratedPrimaries is 146
+aParticle_return.dir is (-0.0298905,-0.0155795,0.999432)
+aParticle_return.kinEnergy is 1.39596
+ nGeneratedPrimaries is 147
+aParticle_return.dir is (0.0133547,-0.439212,0.898284)
+aParticle_return.kinEnergy is 0.7336
+ nGeneratedPrimaries is 148
+aParticle_return.dir is (0.018714,0.00903668,0.999784)
+aParticle_return.kinEnergy is 3.01665
+ nGeneratedPrimaries is 149
+aParticle_return.dir is (-0.0089174,-0.0147305,0.999852)
+aParticle_return.kinEnergy is 1.52945
+ nGeneratedPrimaries is 150
+aParticle_return.dir is (0.0271728,-0.035897,0.998986)
+aParticle_return.kinEnergy is 1.38521
+ nGeneratedPrimaries is 151
+aParticle_return.dir is (-0.454139,0.734729,0.503915)
+aParticle_return.kinEnergy is 0.510999
+ nGeneratedPrimaries is 152
+aParticle_return.dir is (-0.00846423,-0.013165,0.999878)
+aParticle_return.kinEnergy is 0.556648
+ nGeneratedPrimaries is 153
+aParticle_return.dir is (-0.345497,-0.743668,0.572355)
+aParticle_return.kinEnergy is 0.530864
+ nGeneratedPrimaries is 154
+aParticle_return.dir is (-0.0200967,-0.0353001,0.999175)
+aParticle_return.kinEnergy is 1.82392
+ nGeneratedPrimaries is 155
+aParticle_return.dir is (-0.0103741,-0.00269407,0.999943)
+aParticle_return.kinEnergy is 2.4293
+ nGeneratedPrimaries is 156
+aParticle_return.dir is (-0.00839526,0.0378547,0.999248)
+aParticle_return.kinEnergy is 0.50149
+ nGeneratedPrimaries is 157
+aParticle_return.dir is (0.0112564,-0.0193878,0.999749)
+aParticle_return.kinEnergy is 1.58328
+ nGeneratedPrimaries is 158
+aParticle_return.dir is (0.0183498,-0.00304549,0.999827)
+aParticle_return.kinEnergy is 1.12457
+ nGeneratedPrimaries is 159
+aParticle_return.dir is (-0.0728285,-0.28523,0.955688)
+aParticle_return.kinEnergy is 4.39961
+ nGeneratedPrimaries is 160
+aParticle_return.dir is (0.0225186,-0.000315644,0.999746)
+aParticle_return.kinEnergy is 0.858375
+ nGeneratedPrimaries is 161
+aParticle_return.dir is (0.0176702,0.0176915,0.999687)
+aParticle_return.kinEnergy is 0.420857
+ nGeneratedPrimaries is 162
+aParticle_return.dir is (0.0127591,0.0410714,0.999075)
+aParticle_return.kinEnergy is 1.11307
+ nGeneratedPrimaries is 163
+aParticle_return.dir is (-0.017093,-0.0301474,0.999399)
+aParticle_return.kinEnergy is 0.395834
+ nGeneratedPrimaries is 164
+aParticle_return.dir is (0.00230514,-0.03111,0.999513)
+aParticle_return.kinEnergy is 2.29773
+ nGeneratedPrimaries is 165
+aParticle_return.dir is (-0.00937846,-0.0143642,0.999853)
+aParticle_return.kinEnergy is 1.97596
+ nGeneratedPrimaries is 166
+aParticle_return.dir is (-0.0146717,0.0309596,0.999413)
+aParticle_return.kinEnergy is 1.81988
+ nGeneratedPrimaries is 167
+aParticle_return.dir is (-0.0353863,-0.0236582,0.999094)
+aParticle_return.kinEnergy is 0.2487
+ nGeneratedPrimaries is 168
+aParticle_return.dir is (-0.0362352,-0.00908498,0.999302)
+aParticle_return.kinEnergy is 1.3989
+ nGeneratedPrimaries is 169
+aParticle_return.dir is (0.0106474,-0.0296794,0.999503)
+aParticle_return.kinEnergy is 1.94212
+ nGeneratedPrimaries is 170
+aParticle_return.dir is (-0.00146148,0.0344262,0.999406)
+aParticle_return.kinEnergy is 0.466049
+ nGeneratedPrimaries is 171
+aParticle_return.dir is (0.014613,-0.0472168,0.998778)
+aParticle_return.kinEnergy is 0.747106
+ nGeneratedPrimaries is 172
+aParticle_return.dir is (-0.0149473,-0.0133431,0.999799)
+aParticle_return.kinEnergy is 0.178288
+ nGeneratedPrimaries is 173
+aParticle_return.dir is (0.0123579,0.0368719,0.999244)
+aParticle_return.kinEnergy is 5.71834
+ nGeneratedPrimaries is 174
+aParticle_return.dir is (-0.008855,0.0138521,0.999865)
+aParticle_return.kinEnergy is 0.306482
+ nGeneratedPrimaries is 175
+aParticle_return.dir is (0.0106752,-0.038302,0.999209)
+aParticle_return.kinEnergy is 1.28352
+ nGeneratedPrimaries is 176
+aParticle_return.dir is (-0.0338354,-0.0164125,0.999293)
+aParticle_return.kinEnergy is 0.418735
+ nGeneratedPrimaries is 177
+aParticle_return.dir is (0.024664,0.042301,0.9988)
+aParticle_return.kinEnergy is 0.337357
+ nGeneratedPrimaries is 178
+aParticle_return.dir is (0.0301585,0.043894,0.998581)
+aParticle_return.kinEnergy is 0.710543
+ nGeneratedPrimaries is 179
+aParticle_return.dir is (-0.0328465,0.0224094,0.999209)
+aParticle_return.kinEnergy is 1.19157
+ nGeneratedPrimaries is 180
+aParticle_return.dir is (-0.0373846,0.281955,0.958699)
+aParticle_return.kinEnergy is 1.46497
+ nGeneratedPrimaries is 181
+aParticle_return.dir is (0.00670696,0.0203039,0.999771)
+aParticle_return.kinEnergy is 1.92574
+ nGeneratedPrimaries is 182
+aParticle_return.dir is (0.00243965,-0.00907598,0.999956)
+aParticle_return.kinEnergy is 0.769513
+ nGeneratedPrimaries is 183
+aParticle_return.dir is (0.00656816,0.00203291,0.999976)
+aParticle_return.kinEnergy is 0.825806
+ nGeneratedPrimaries is 184
+aParticle_return.dir is (0.0131871,-0.0466842,0.998823)
+aParticle_return.kinEnergy is 1.95969
+ nGeneratedPrimaries is 185
+aParticle_return.dir is (-0.0163917,0.0312338,0.999378)
+aParticle_return.kinEnergy is 0.381535
+ nGeneratedPrimaries is 186
+aParticle_return.dir is (-0.0313072,-0.0218874,0.99927)
+aParticle_return.kinEnergy is 2.14326
+ nGeneratedPrimaries is 187
+aParticle_return.dir is (0.0132503,0.00891868,0.999872)
+aParticle_return.kinEnergy is 0.55084
+ nGeneratedPrimaries is 188
+aParticle_return.dir is (-0.0098133,0.011415,0.999887)
+aParticle_return.kinEnergy is 0.28234
+ nGeneratedPrimaries is 189
+aParticle_return.dir is (-0.0152861,0.0457117,0.998838)
+aParticle_return.kinEnergy is 1.30482
+ nGeneratedPrimaries is 190
+aParticle_return.dir is (0.00915163,0.0147277,0.99985)
+aParticle_return.kinEnergy is 4.40644
+ nGeneratedPrimaries is 191
+aParticle_return.dir is (-0.0170335,-0.0364783,0.999189)
+aParticle_return.kinEnergy is 5.94458
+ nGeneratedPrimaries is 192
+aParticle_return.dir is (-0.0165464,-0.018496,0.999692)
+aParticle_return.kinEnergy is 1.20816
+ nGeneratedPrimaries is 193
+aParticle_return.dir is (-0.000158977,-0.0185952,0.999827)
+aParticle_return.kinEnergy is 5.72872
+ nGeneratedPrimaries is 194
+aParticle_return.dir is (0.00704777,0.00308022,0.99997)
+aParticle_return.kinEnergy is 2.3021
+ nGeneratedPrimaries is 195
+aParticle_return.dir is (-0.00271617,0.045345,0.998968)
+aParticle_return.kinEnergy is 0.840881
+ nGeneratedPrimaries is 196
+aParticle_return.dir is (-0.00692969,-0.0452914,0.99895)
+aParticle_return.kinEnergy is 1.57812
+ nGeneratedPrimaries is 197
+aParticle_return.dir is (0.00750816,0.0154676,0.999852)
+aParticle_return.kinEnergy is 0.476324
+ nGeneratedPrimaries is 198
+aParticle_return.dir is (0.0265156,-0.0341162,0.999066)
+aParticle_return.kinEnergy is 0.719494
+ nGeneratedPrimaries is 199
+aParticle_return.dir is (-0.005554,0.00993561,0.999935)
+aParticle_return.kinEnergy is 0.296926
+ nGeneratedPrimaries is 200
+ Run terminated.
+Run Summary
+  Number of events processed : 200
+  User=0.02s Real=0.01s Sys=0s
+WARNING: G4VisManager::IsValidView(): Attempt to draw when no graphics system
+  has been instantiated.  Use "/vis/open" or "/vis/sceneHandler/create".
+  Alternatively, to avoid this message, suppress instantiation of vis
+  manager (G4VisExecutive), possibly by setting G4VIS_NONE, and ensure
+  drawing code is executed only if G4VVisManager::GetConcreteInstance()
+  is non-zero.
+G4 kernel has come to Quit state.
+================== Deleting memory pools ===================
+Number of memory pools allocated: 10; of which, static: 0
+Dynamic pools deleted: 10 / Total memory freed: 0.03 MB
+============================================================
+RunManagerKernel is deleted. Good bye :)

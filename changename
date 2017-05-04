@@ -1,0 +1,21 @@
+#!/bin/sh
+
+InitFullName=$(basename *.cc)
+InitName=${InitFullName%.*}
+ProjName=${PWD##*/}
+
+echo "Change the project name into \""$ProjName"\".\nDo you agree? [y/n]"
+read isAgree
+if [ "$isAgree" = "n" ]
+then
+    echo "Then, write the project name: "
+    read ProjName
+fi
+
+if [ "$ProjName" = "" ]
+then
+    echo "ERROR: The project name is empty.\nPlease rerun this file."
+else
+    rename 's|'$InitName'|'$ProjName'|g' *.cc
+    perl -pi -e 's|'$InitName'|'$ProjName'|g' CMakeLists.txt
+fi

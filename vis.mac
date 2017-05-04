@@ -1,0 +1,17 @@
+/vis/open OGL 600x600
+
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+
+/vis/drawVolume
+/vis/viewer/set/viewpointVector -2 1 -1
+/vis/viewer/zoomTo 3
+
+/vis/scene/add/trajectories
+/vis/scene/endOfEventAction accumulate 100
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 5
+
+/vis/viewer/set/autoRefresh true
+/vis/verbose warning
