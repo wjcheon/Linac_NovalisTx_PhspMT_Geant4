@@ -17,9 +17,8 @@ The geometry is considered of Linac_NovalisTx_Geant4.git.
 ### Figure    
 <img src = https://github.com/wjcheon/Linac_NovalisTx_PhspMT_Geant4/blob/master/geometry_beam_on..jpg />
 Fig.1 the geometry for dosimetry in middle and exit of phantom.   
-  =====  
-  =====  
-  =====  
+  
+  
 <img src = https://github.com/wjcheon/Linac_NovalisTx_PhspMT_Geant4/blob/master/phantom_hetero_designed_cad..jpg />
 Fig.2 the phantom designed 3D CAD is imported to Monte-carlo simulation space (White: Teflon, Red: Polystyrene)  
 
