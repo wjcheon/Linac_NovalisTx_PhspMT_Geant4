@@ -42,6 +42,10 @@
 #include "G4IonBinaryCascadePhysics.hh"
 #include "G4NeutronTrackingCut.hh"
 
+// opt3
+#include "G4EmStandardPhysics_option3.hh"
+
+
 PhysicsList::PhysicsList()
 :G4VModularPhysicsList()
 {
@@ -50,7 +54,8 @@ PhysicsList::PhysicsList()
 	// Decay physics
 	RegisterPhysics(new G4DecayPhysics());
 	// EM physics
-	RegisterPhysics(new G4EmStandardPhysics());
+	//RegisterPhysics(new G4EmStandardPhysics());
+	RegisterPhysics(new G4EmStandardPhysics_option3());   // standard_option3
 	// Radioactive decay
 	RegisterPhysics(new G4RadioactiveDecayPhysics());
 

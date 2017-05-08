@@ -109,7 +109,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
 
 	nGeneratedPrimaries= nGeneratedPrimaries + 1;
-	G4cout<< " nGeneratedPrimaries is "<< nGeneratedPrimaries <<G4endl;
+	//G4cout<< " nGeneratedPrimaries is "<< nGeneratedPrimaries <<G4endl;
 	particleGun->GeneratePrimaryVertex(anEvent);
 
 	/*

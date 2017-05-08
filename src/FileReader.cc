@@ -120,7 +120,7 @@ FileReader::Sparticle FileReader::GetParticleContainer(){
 			z = z-1200;
 			this->aParticle.pos.set(x,y,z);
 
-			G4cout<<"currentFilePosition is on container" << inputFile.tellg() << G4endl;
+			//G4cout<<"currentFilePosition is on container" << inputFile.tellg() << G4endl;
 			//direction
 			inputFile >> x; inputFile >>y; inputFile >> z;
 			this->aParticle.dir.set(x,y,z);

@@ -58,7 +58,7 @@ DetectorConstruction::DetectorConstruction()
 :G4VUserDetectorConstruction()
 {
 	USE_HOMO_PHANTOM = true;   // false: Use Hetero-geneous Phantom
-								// true: Use Homo-geneous Phantom
+	// true: Use Homo-geneous Phantom
 
 }
 
@@ -174,6 +174,18 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	G4VPhysicalVolume *polyPhys_teflon = NULL;
 	if (USE_HOMO_PHANTOM)
 	{
+		PolygonDataImport* polyData_Middle = new PolygonDataImport("./polygon/200x200x30.ply");
+		G4int numFacet_Middle = polyData_Middle->GetNumFacet();
+		G4TessellatedSolid* polySolid_Middle= new G4TessellatedSolid("Phantom_Middle");
+		for(G4int i=0; i < numFacet_Middle ; i++){
+			polySolid_Middle->AddFacet(polyData_Middle->GetFacet(i));
+		}
+		polySolid_Middle->SetSolidClosed(true);
+		polyLogic_Middle= new G4LogicalVolume(polySolid_Middle,Polystyrene,"Phantom_Middle");
+		polyPhys_Middle= new G4PVPlacement(0,G4ThreeVector(-10*cm,-10*cm,(-3.0/2)*cm),polyLogic_Middle,"Phantom_Middle",lv_PhantomMother,false,12);
+	}
+	else
+	{
 		PolygonDataImport* polyData_Middle = new PolygonDataImport("./polygon/200x200x30 with hole.ply");
 		G4int numFacet_Middle = polyData_Middle->GetNumFacet();
 		G4TessellatedSolid* polySolid_Middle= new G4TessellatedSolid("Phantom_Middle");
@@ -195,18 +207,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 		polySolid_teflon->SetSolidClosed(true);
 		polyLogic_teflon= new G4LogicalVolume(polySolid_teflon,Teflon,"Phantom_middle_teflon");
 		polyPhys_teflon= new G4PVPlacement(0,G4ThreeVector(-10*cm,-10*cm,(-3.0/2)*cm),polyLogic_teflon,"Phantom_middle_teflon",lv_PhantomMother,false,13);
-	}
-	else
-	{
-		PolygonDataImport* polyData_Middle = new PolygonDataImport("./polygon/200x200x30.ply");
-		G4int numFacet_Middle = polyData_Middle->GetNumFacet();
-		G4TessellatedSolid* polySolid_Middle= new G4TessellatedSolid("Phantom_Middle");
-		for(G4int i=0; i < numFacet_Middle ; i++){
-			polySolid_Middle->AddFacet(polyData_Middle->GetFacet(i));
-		}
-		polySolid_Middle->SetSolidClosed(true);
-		polyLogic_Middle= new G4LogicalVolume(polySolid_Middle,Polystyrene,"Phantom_Middle");
-		polyPhys_Middle= new G4PVPlacement(0,G4ThreeVector(-10*cm,-10*cm,(-3.0/2)*cm),polyLogic_Middle,"Phantom_Middle",lv_PhantomMother,false,12);
 	}
 
 	//

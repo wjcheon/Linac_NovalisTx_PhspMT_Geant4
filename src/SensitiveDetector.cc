@@ -119,6 +119,7 @@ G4bool SensitiveDetector::ProcessHits(G4Step* aStep, G4TouchableHistory*)
 	G4double dE = aStep->GetTotalEnergyDeposit();
 
 	DEMAtrix[RepZNo][RepXNo] += dE;
+	//G4cout<<"SD is working!!" << G4endl;
 
 
     return true;
