@@ -57,7 +57,7 @@
 DetectorConstruction::DetectorConstruction()
 :G4VUserDetectorConstruction()
 {
-	USE_HOMO_PHANTOM = true;   // false: Use Hetero-geneous Phantom
+	USE_HOMO_PHANTOM = false;   // false: Use Hetero-geneous Phantom
 	// true: Use Homo-geneous Phantom
 
 }
@@ -101,6 +101,7 @@ void DetectorConstruction::SetDimension(){
 	PhantomMotherPosX = 0.0*cm;
 	PhantomMotherPosY = 0.0*cm;      //  SSD: 1000.0 mm
 	PhantomMotherPosZ = TargetPositionZ + 1000*mm;
+
 
 
 	NumOfReplica = NUMBER_OF_REPLICA;   // in shared.hh
@@ -174,7 +175,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	G4VPhysicalVolume *polyPhys_teflon = NULL;
 	if (USE_HOMO_PHANTOM)
 	{
-		PolygonDataImport* polyData_Middle = new PolygonDataImport("./polygon/200x200x30.ply");
+		PolygonDataImport* polyData_Middle = new PolygonDataImport("./polygon/200x200x30 with hole.ply");
 		G4int numFacet_Middle = polyData_Middle->GetNumFacet();
 		G4TessellatedSolid* polySolid_Middle= new G4TessellatedSolid("Phantom_Middle");
 		for(G4int i=0; i < numFacet_Middle ; i++){
@@ -267,6 +268,10 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	G4VisAttributes* va_Phantom_teflon = new G4VisAttributes(G4Colour(1.0, 1.0, 1.0));
 	va_Phantom_teflon->SetForceSolid(true);
 	if (USE_HOMO_PHANTOM){
+		G4int a=0;
+	}
+	else
+	{
 		polyLogic_teflon->SetVisAttributes(va_Phantom_teflon);
 	}
 
