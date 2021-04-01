@@ -1,4 +1,4 @@
-# Install script for directory: /home/wjcheon-g4/Geant4/10.2/ExitAndInvivoDosimetry
+# Install script for directory: /home/geant4/Geant4/itrs_examples/Linac_NovalisTx_PhspMT_Geant4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -32,8 +32,29 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/wjcheon-g4/Geant4/10.2/ExitAndInvivoDosimetry/CMakeFiles/CMakeRelink.dir/ExitAndInvivoDosimetry")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ExitAndInvivoDosimetry" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ExitAndInvivoDosimetry")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ExitAndInvivoDosimetry"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/geant4/Geant4/itrs_examples/Linac_NovalisTx_PhspMT_Geant4/ExitAndInvivoDosimetry")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ExitAndInvivoDosimetry" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ExitAndInvivoDosimetry")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ExitAndInvivoDosimetry"
+         OLD_RPATH "/usr/local/Geant4/lib:/usr/local/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ExitAndInvivoDosimetry")
+    endif()
+  endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -44,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wjcheon-g4/Geant4/10.2/ExitAndInvivoDosimetry/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/geant4/Geant4/itrs_examples/Linac_NovalisTx_PhspMT_Geant4/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
